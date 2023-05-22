@@ -1,0 +1,21 @@
+.inputBox {
+    border: none;
+    outline: none;
+    width: 35rem;
+    height: 2.5rem;
+    border-radius: 20px;
+}
+.search_icon_Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+.search_icon_Box:hover{
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
