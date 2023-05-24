@@ -16,7 +16,10 @@ export default function SearchFeed() {
           pl: 2,
           display: "flex",
           gap: 1,
-          mr: { sm: 5 },
+          justifyContent: "space-between",
+          "@media (max-width: 700px)": {
+            display: "flex",
+          },
         }}
       >
         <input placeholder="Search..." className={style.inputBox} />

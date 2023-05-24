@@ -12,6 +12,10 @@ const myStyle = {
   padding: "0.5rem",
   borderRadius: "2rem",
   "&:hover": { backgroundColor: "#909090" },
+  "@media (max-width: 700px)": {
+    width: "1.5rem",
+    height: "1.5rem",
+  },
 };
 
 export default function Navbar() {
@@ -20,12 +24,20 @@ export default function Navbar() {
       <span className={style.container1}>
         <MenuIcon sx={{ ...myStyle }} />
         <span className={style.inner_container1}>
-          <YouTubeIcon sx={{ color: "red", fontSize: "2rem" }} />
+          <YouTubeIcon
+            sx={{
+              color: "red",
+              fontSize: "2rem",
+              "@media (max-width: 700px)": { width: "1.5rem" },
+            }}
+          />
           <p>YouTube</p>
         </span>
       </span>
-      <SearchFeed />
       <span className={style.container2}>
+        <SearchFeed />
+      </span>
+      <span className={style.container3}>
         <VideoCallIcon sx={{ ...myStyle }} />
         <NotificationsIcon sx={{ ...myStyle }} />
         <AccountCircleIcon sx={{ fontSize: "2.5rem" }} />

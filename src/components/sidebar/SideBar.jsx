@@ -10,7 +10,7 @@ export default function SideBar() {
         flexDirection: { md: "column" },
       }}
     >
-      <SideBar />
+      <h1>sidebar</h1>
     </Stack>
   );
 }

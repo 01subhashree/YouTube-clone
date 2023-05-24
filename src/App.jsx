@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/homePage/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import ChannelDetail from "./components/ChannelDetail";
@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/search/:seatchTerm" element={<SearchFeed />} />
         <Route path="/video:id" element={<VideoDetail />} />
