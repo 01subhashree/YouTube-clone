@@ -4,7 +4,7 @@ import HomePage from "./pages/homePage/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import ChannelDetail from "./components/ChannelDetail";
-import SearchFeed from "./components/searchBar/SearchFeed";
+import SearchFeed from "./components/searchBar/searchFeed/SearchFeed";
 import VideoDetail from "./components/VideoDetail";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/search/:seatchTerm" element={<SearchFeed />} />
+        <Route path="/search/:searchTerm" element={<SearchFeed />} />
         <Route path="/video:id" element={<VideoDetail />} />
         <Route path="/channel/:id" element={<ChannelDetail />} />
         <Route path="/signin" element={<LoginPage />} />

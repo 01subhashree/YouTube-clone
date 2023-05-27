@@ -1,9 +1,19 @@
 import { useState } from "react";
 import Paper from "@mui/material/Paper";
 import SearchIcon from "@mui/icons-material/Search";
-import style from "./SearchFees.module.css";
+import style from "./SearchBar.module.css";
+import { useNavigate } from "react-router-dom";
 
-export default function SearchFeed() {
+export default function SearchBar() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
+      setSearchTerm("");
+    }
+  };
   return (
     <div>
       <Paper
@@ -22,12 +32,18 @@ export default function SearchFeed() {
           },
         }}
       >
-        <input placeholder="Search..." className={style.inputBox} />
+        <input
+          placeholder="Search..."
+          className={style.inputBox}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
         <span className={style.search_icon_Box}>
           <SearchIcon
             sx={{
               fontSize: "2rem",
             }}
+            onClick={clickHandler}
           />
         </span>
       </Paper>

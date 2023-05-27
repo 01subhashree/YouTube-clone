@@ -4,7 +4,7 @@ import VideoCallIcon from "@mui/icons-material/VideoCall";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import style from "./NavBar.module.css";
-import SearchFeed from "../searchBar/SearchFeed";
+import SearchBar from "../searchBar/SearchBar";
 
 const myStyle = {
   width: "2rem",
@@ -35,7 +35,7 @@ export default function Navbar() {
         </span>
       </span>
       <span className={style.container2}>
-        <SearchFeed />
+        <SearchBar />
       </span>
       <span className={style.container3}>
         <VideoCallIcon sx={{ ...myStyle }} />
