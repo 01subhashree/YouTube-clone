@@ -15,10 +15,9 @@ function VideoCard({
     snippet,
   },
 }) {
-  console.log(videoId, snippet);
   return (
     <div>
-      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
+      <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
         <img src={snippet?.thumbnails?.high?.url} alt={snippet?.title} />
         <p>{snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}</p>
       </Link>
