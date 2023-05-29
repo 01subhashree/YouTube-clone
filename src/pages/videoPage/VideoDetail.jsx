@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactPlayer from "react-player";
-import Videos from "./Videos";
-import { fetchFromAPI } from "../utils/FetchFromAPI";
-import Loader from "./Loader";
+import Videos from "../../components/videos/Videos";
+import { fetchFromAPI } from "../../utils/FetchFromAPI";
+import Loader from "../../components/Loader";
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
@@ -20,7 +20,7 @@ const VideoDetail = () => {
     );
   }, [id]);
 
-  console.log(videoDetail);
+  console.log("this is video details", videoDetail);
 
   if (!videoDetail?.snippet) return <Loader />;
 

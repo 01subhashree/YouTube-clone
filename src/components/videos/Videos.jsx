@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import VideoCard from "./VideoCard";
+import VideoCard from "../videoCard/VideoCard";
 
 export default function Videos({ videos }) {
   console.log(videos);

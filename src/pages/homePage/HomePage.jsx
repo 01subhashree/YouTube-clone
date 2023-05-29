@@ -3,11 +3,11 @@ import { fetchFromAPI } from "../../utils/FetchFromAPI";
 import SideBar from "../../components/sidebar/SideBar";
 import CategoriesBar from "../../components/category/CategoriesBar";
 import style from "./HomePage.module.css";
-import Videos from "../../components/Videos";
+import Videos from "../../components/videos/Videos";
 
 export default function HomePage() {
   const [videos, setVideos] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
     setVideos(null);

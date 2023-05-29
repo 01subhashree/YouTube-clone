@@ -2,12 +2,11 @@
 import { Link } from "react-router-dom";
 
 import {
-  demoThumbnailUrl,
   demoVideoUrl,
   demoVideoTitle,
   demoChannelUrl,
   demoChannelTitle,
-} from "../utils/DemoFile";
+} from "../../utils/DemoFile";
 
 function VideoCard({
   video: {
@@ -17,7 +16,7 @@ function VideoCard({
 }) {
   return (
     <div>
-      <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
+      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <img src={snippet?.thumbnails?.high?.url} alt={snippet?.title} />
         <p>{snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}</p>
       </Link>

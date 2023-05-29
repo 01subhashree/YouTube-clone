@@ -5,6 +5,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import style from "./NavBar.module.css";
 import SearchBar from "../searchBar/SearchBar";
+import { useNavigate } from "react-router-dom";
 
 const myStyle = {
   width: "2rem",
@@ -19,10 +20,15 @@ const myStyle = {
 };
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/");
+  };
+
   return (
     <div className={style.MainNav_container}>
       <span className={style.container1}>
-        <MenuIcon sx={{ ...myStyle }} />
+        <MenuIcon sx={{ ...myStyle }} onClick={clickHandler} />
         <span className={style.inner_container1}>
           <YouTubeIcon
             sx={{

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchFromAPI } from "../../../utils/FetchFromAPI";
 import SideBar from "../../../components/sidebar/SideBar";
-import Videos from "../../../components/Videos";
+import Videos from "../../../components/videos/Videos";
 import { useParams } from "react-router-dom";
 
 export default function SearchFeed() {

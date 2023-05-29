@@ -2,22 +2,22 @@
 import style from "./CategoriesBar.module.css";
 
 const buttons = [
-  "New",
+  "All",
   "React js",
   "Angular js",
-  "React Native",
-  "use of API",
+  "Gaming",
+  "Music",
   "Redux",
   "Music",
   "Algorithm Art ",
-  "Guitar",
+  "Live",
   "Bengali Songs",
   "Coding",
   "Cricket",
   "Football",
-  "Real Madrid",
+  "Romantic comedies",
   "Gatsby",
-  "Poor Coder",
+  "K-Pop",
   "Shwetabh",
 ];
 
