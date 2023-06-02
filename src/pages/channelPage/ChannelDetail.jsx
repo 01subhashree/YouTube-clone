@@ -26,7 +26,6 @@ export default function ChannelDetail() {
   }, [id]);
   return (
     <div>
-      <h1>ChannelDetail</h1>
       <ChannelCard channelDetail={channelDetail} />
       <Videos videos={videos} />
     </div>

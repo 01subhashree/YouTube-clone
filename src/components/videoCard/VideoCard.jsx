@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-
+import style from "./VideoCard.module.css";
 import {
   demoVideoUrl,
   demoVideoTitle,
   demoChannelUrl,
   demoChannelTitle,
 } from "../../utils/DemoFile";
+import VideoPublishTime from "../PublishTime";
 
 function VideoCard({
   video: {
@@ -15,9 +16,13 @@ function VideoCard({
   },
 }) {
   return (
-    <div>
+    <div className={style.VideoCardDiv}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <img src={snippet?.thumbnails?.high?.url} alt={snippet?.title} />
+        <img
+          className={style.img}
+          src={snippet?.thumbnails?.high?.url}
+          alt={snippet?.title}
+        />
         <p>{snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}</p>
       </Link>
       <Link
@@ -27,6 +32,7 @@ function VideoCard({
       >
         <p>{snippet?.channelTitle || demoChannelTitle}</p>
       </Link>
+      <VideoPublishTime publishDate={snippet?.publishedAt} />
     </div>
   );
 }

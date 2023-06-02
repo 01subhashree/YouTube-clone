@@ -1,0 +1,17 @@
+.MainContainer{
+    display: grid;
+    grid-template-columns: 1rem 0.6fr 3fr 2rem;
+    margin-top: 1rem;
+}
+.sideBar{
+    grid-column: 2;
+    position: fixed;
+    left: 1rem;
+}
+.homeContainer{
+    grid-column: 3;
+}
+.Container{
+    position: fixed;
+    overflow-x: auto;
+}

@@ -6,8 +6,8 @@ export default function ChannelCard({ channelDetail }) {
   console.log("channel card", channelDetail);
   return (
     <div>
-      <h1>channelCard</h1>
       <img
+        style={{ width: "100px" }}
         src={
           channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture
         }

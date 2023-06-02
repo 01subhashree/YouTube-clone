@@ -23,7 +23,7 @@ const buttons = [
 
 export default function CategoriesBar({ setSelectedCategory }) {
   return (
-    <div>
+    <div className={style.CategoriesBar}>
       {buttons.map((ele, index) => (
         <span key={index}>
           <button onClick={() => setSelectedCategory(ele)}>{ele}</button>

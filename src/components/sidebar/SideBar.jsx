@@ -32,9 +32,9 @@ export default function SideBar({ setSelectedCategory }) {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      spacing={1}
+      spacing={2}
     >
-      <Button sx={myStyle} onClick={() => setSelectedCategory("All")}>
+      <Button sx={myStyle} onClick={() => setSelectedCategory("New")}>
         <HomeIcon />
         <p>Home</p>
       </Button>
