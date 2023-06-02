@@ -4,6 +4,7 @@ import SideBar from "../../components/sidebar/SideBar";
 import CategoriesBar from "../../components/category/CategoriesBar";
 import style from "./HomePage.module.css";
 import Videos from "../../components/videos/Videos";
+import { Stack } from "@mui/material";
 
 export default function HomePage() {
   const [videos, setVideos] = useState([]);
@@ -18,15 +19,15 @@ export default function HomePage() {
   }, [selectedCategory]);
 
   return (
-    <div className={style.mainDiv}>
+    <Stack direction="row" spacing={3} marginTop={1}>
       <span>
-        <SideBar />
+        <SideBar setSelectedCategory={setSelectedCategory} />
       </span>
       <span>
         <CategoriesBar setSelectedCategory={setSelectedCategory} />
         <h1>HomePage</h1>
         <Videos videos={videos} />
       </span>
-    </div>
+    </Stack>
   );
 }
