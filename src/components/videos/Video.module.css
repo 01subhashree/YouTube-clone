@@ -7,3 +7,14 @@
 .videoCardContainer{
     display: flex;
 }
+@media screen and (max-width: 1100px){
+    .videoContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:550px){
+    .videoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -17,6 +17,15 @@
   @media screen and (max-width: 650px){
     .sidebarContainer{
         flex-direction: row;
-        overflow-x: scroll;
+    overflow: scroll;
+    position: fixed;
+    bottom: 0;
+    top: 93vh;
+    width: 100%;
+    left: 0;
+    right: 1rem;
+    background-color: white;
+    padding: 1rem;
+    gap: 2.5rem;
     }
   }

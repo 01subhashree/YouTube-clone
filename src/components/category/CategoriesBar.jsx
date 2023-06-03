@@ -10,8 +10,8 @@ const buttons = [
   "Redux",
   "Music",
   "Algorithm Art ",
-  "Live",
-  "Bengali Songs",
+  "k-drama",
+  "South Movies",
   "Coding",
   "Cricket",
   "Football",
@@ -26,7 +26,12 @@ export default function CategoriesBar({ setSelectedCategory }) {
     <div className={style.CategoriesBar}>
       {buttons.map((ele, index) => (
         <span key={index}>
-          <button onClick={() => setSelectedCategory(ele)}>{ele}</button>
+          <button
+            className={style.btn}
+            onClick={() => setSelectedCategory(ele)}
+          >
+            {ele}
+          </button>
         </span>
       ))}
     </div>
