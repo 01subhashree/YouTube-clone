@@ -1,0 +1,69 @@
+.videoDetailContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 0 5rem;
+    height: fit-content;
+}
+.videoContainer2{
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+.videoDetailDiv{
+    width: 60%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.para1{
+    word-break: break-word;
+    font-family: "YouTube Sans","Roboto",sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+.Link{
+    color: black; 
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: 600;
+}
+.innerDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    display: flex;
+    padding: 0.5rem;
+    width: 10rem;
+    justify-content: space-around;
+    border-radius: 2rem;
+    border: none; 
+}
+.like{
+    border-right: 1px solid rgba(138, 135, 135, 0.421);
+    padding: 0 1rem 0 0;
+    display: flex;
+    gap: 0.6rem;
+    font-size: 1rem;
+}
+.like p{
+    margin-top: 0.2rem;
+}
+.react_player{
+    width: 100%;
+    height: 30rem;
+}
+
+@media screen and (max-width: 1100px){
+    .react_player{
+        height: 20rem;
+    }
+}

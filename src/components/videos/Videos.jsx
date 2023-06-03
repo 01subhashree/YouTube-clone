@@ -2,10 +2,11 @@
 import VideoCard from "../videoCard/VideoCard";
 import style from "./Video.module.css";
 
-export default function Videos({ videos }) {
+export default function Videos({ videos, isHome }) {
   console.log(videos);
+  console.log(isHome);
   return (
-    <div className={style.videoContainer}>
+    <div className={isHome ? style.VideoCard : style.videoContainer}>
       {videos &&
         videos.map((ele, index) => (
           <div key={index} className={style.videoCardContainer}>
