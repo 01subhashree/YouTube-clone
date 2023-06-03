@@ -8,6 +8,7 @@ import {
   demoChannelTitle,
 } from "../../utils/DemoFile";
 import VideoPublishTime from "../PublishTime";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 function VideoCard({
   video: {
@@ -17,19 +18,26 @@ function VideoCard({
 }) {
   return (
     <div className={style.VideoCardDiv}>
-      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
+      <Link
+        to={videoId ? `/video/${videoId}` : demoVideoUrl}
+        style={{ textDecoration: "none" }}
+      >
         <img
           className={style.img}
           src={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
         />
-        <p>{snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}</p>
+        <p className={style.para}>
+          {snippet?.title.slice(0, 70) || demoVideoTitle.slice(0, 60)}
+        </p>
       </Link>
       <Link
+        className={style.link}
         to={
           snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl
         }
       >
+        <CheckCircleOutlineIcon />
         <p>{snippet?.channelTitle || demoChannelTitle}</p>
       </Link>
       <VideoPublishTime publishDate={snippet?.publishedAt} />

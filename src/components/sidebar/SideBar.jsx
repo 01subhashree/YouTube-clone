@@ -1,22 +1,25 @@
 /* eslint-disable react/prop-types */
-import { Button, Stack } from "@mui/material";
+import { Button } from "@mui/material";
 import sideBarData from "../../utils/icons";
 import HomeIcon from "@mui/icons-material/Home";
 import { useNavigate } from "react-router-dom";
+import styles from "./SideBar.module.css";
+import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
 
 const myStyle = {
   color: "black",
   gap: "0.5rem",
   width: "8.5rem",
-  border: "1px solid",
   borderRadius: "2rem",
   display: "flex",
   justifyContent: "flex-start",
   "& hover": {
+    width: "9rem",
     borderRadius: "2rem",
-    backgroundColor: "#909090",
+    backgroundColor: "black",
+    height: "3.5rem",
+    padding: "1rem",
   },
-  // zIndex: -1,
 };
 
 export default function SideBar({ setSelectedCategory }) {
@@ -28,19 +31,14 @@ export default function SideBar({ setSelectedCategory }) {
   };
 
   return (
-    <Stack
-      direction="column"
-      justifyContent="center"
-      alignItems="center"
-      spacing={2}
-    >
+    <div className={styles.sidebarContainer}>
       <Button sx={myStyle} onClick={() => setSelectedCategory("New")}>
-        <HomeIcon />
-        <p>Home</p>
+        <HomeIcon sx={{ fontSize: "2rem" }} />
+        <p className={styles.para}>Home</p>
       </Button>
       <Button sx={myStyle} onClick={clickHandler}>
-        <HomeIcon />
-        <p>Shorts</p>
+        <VideoCameraBackIcon sx={{ fontSize: "2rem" }} />
+        <p className={styles.para}>Shorts</p>
       </Button>
       {sideBarData.map((ele) => (
         <Button
@@ -49,9 +47,9 @@ export default function SideBar({ setSelectedCategory }) {
           onClick={() => setSelectedCategory(ele.name)}
         >
           {ele.icon}
-          <p>{ele.name}</p>
+          <p className={styles.para}>{ele.name}</p>
         </Button>
       ))}
-    </Stack>
+    </div>
   );
 }

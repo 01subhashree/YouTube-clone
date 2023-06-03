@@ -12,7 +12,7 @@ const myStyle = {
   height: "2rem",
   padding: "0.5rem",
   borderRadius: "2rem",
-  "&:hover": { backgroundColor: "#909090" },
+  "&:hover": { backgroundColor: "#90909047" },
   "@media (max-width: 700px)": {
     width: "1.5rem",
     height: "1.5rem",
