@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 // import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../../utils/DemoFile";
+import style from "./ChannelCard.module.css";
 
 export default function ChannelCard({ channelDetail }) {
   console.log("channel card", channelDetail);
   return (
-    <div>
+    <div className={style.ChannelCardDiv}>
       <img
-        style={{ width: "100px" }}
+        className={style.ChannelCardimg}
         src={
           channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture
         }

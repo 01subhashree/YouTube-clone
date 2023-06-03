@@ -1,4 +1,6 @@
-
+.VideoCardDiv{
+    width: 100%;
+}
 .img{
     width: 100%;
     border-radius: 1rem;

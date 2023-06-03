@@ -25,9 +25,11 @@ export default function ChannelDetail() {
     fetchResults();
   }, [id]);
   return (
-    <div>
+    <>
       <ChannelCard channelDetail={channelDetail} />
-      <Videos videos={videos} />
-    </div>
+      <div style={{ padding: "2rem" }}>
+        <Videos videos={videos} />
+      </div>
+    </>
   );
 }

@@ -1,0 +1,18 @@
+.ChannelCardDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    
+}
+.ChannelCardimg{
+    width: 10rem;
+    border-radius: 5rem;
+}
+@media screen and (max-width: 600px){
+    .ChannelCardimg{
+        width: 8rem;
+        border-radius: 5rem;
+    }
+}

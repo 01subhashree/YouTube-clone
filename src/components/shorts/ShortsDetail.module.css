@@ -1,12 +1,11 @@
 .mainContainer_Shorts{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    grid-template-columns: 1fr 2fr 0.2fr 1fr;
+    gap: 1rem;
 }
 .videoDiv_shorts{
-    height: 36rem;
+    height: 37.5rem;
     width: 26rem;
 }
 .Div1{
@@ -18,5 +17,33 @@
     grid-column: 3/4;
     display: flex;
     flex-direction: column;
+    height: 20rem;
     justify-content: space-around;
+}
+.innerDiv{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+@media screen and (max-width: 500px) {
+    .videoDiv_shorts{
+        width: 20rem;
+    }
+    .mainContainer_Shorts{
+        width: 100%;
+        gap: 0.5rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .videoDiv_shorts{
+        width: 15rem;
+    }
+    .innerDiv{
+        gap: 0.3rem;
+        font-size: 1rem;
+    }
 }

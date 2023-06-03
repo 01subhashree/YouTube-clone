@@ -2,6 +2,12 @@ import { useState, useEffect } from "react";
 import { fetchFromAPI } from "../../utils/FetchFromAPI";
 import ShortsDetail from "../../components/shorts/ShortsDetail";
 
+const myStyle = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "1rem",
+};
+
 export default function Shorts() {
   const [videos, setVideos] = useState([]);
   const selectedCategory = "Shorts";
@@ -17,7 +23,7 @@ export default function Shorts() {
   console.log(videos);
 
   return (
-    <div>
+    <div style={{ ...myStyle }}>
       {videos &&
         videos.length !== 0 &&
         videos.map((ele, index) => (
