@@ -3,6 +3,7 @@ import { fetchFromAPI } from "../../../utils/FetchFromAPI";
 import SideBar from "../../../components/sidebar/SideBar";
 import Videos from "../../../components/videos/Videos";
 import { useParams } from "react-router-dom";
+import Style from "./SearchFeed.module.css";
 
 export default function SearchFeed() {
   const [videos, setVideos] = useState([]);
@@ -15,13 +16,12 @@ export default function SearchFeed() {
   }, [searchTerm]);
 
   return (
-    <div>
-      <span>
+    <div className={Style.maindiv_searchfeed}>
+      <span className={Style.sideBar}>
         <SideBar />
       </span>
-      <span>
-        <h1>HomePage</h1>
-        {searchTerm}
+      <span className={Style.mainContainer}>
+        <h1>{searchTerm}</h1>
         <Videos videos={videos} />
       </span>
     </div>
