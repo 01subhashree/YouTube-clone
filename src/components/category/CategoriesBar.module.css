@@ -1,10 +1,11 @@
 .CategoriesBar{
     display: flex;
     gap: 2rem;
+    padding: 1rem;
     overflow: scroll;
     position: fixed;
     right: 2rem;
-    left: 13rem;
+    left: 12rem;
     background: white;
     height: 4rem;
 
