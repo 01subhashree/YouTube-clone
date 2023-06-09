@@ -11,7 +11,6 @@ const myStyle = {
   gap: "0.5rem",
   width: "8.5rem",
   borderRadius: "2rem",
-  backgroundColor: "white",
   display: "flex",
   justifyContent: "flex-start",
   "& hover": {
