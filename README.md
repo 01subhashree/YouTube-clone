@@ -13,7 +13,7 @@ https://chipper-narwhal-b7c763.netlify.app/
 - Clone this project using link ""
 - Install all the package using command "npm install"
 - create your own Rapid API key and paste it in src/utils/FetchFromAPI.jsx file
-- to start write command "npm dev run " in terminal
+- to start write command "npm run dev" in terminal
 
 
 # How the project look like
