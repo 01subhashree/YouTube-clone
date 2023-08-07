@@ -3,7 +3,9 @@
 This project ia a Youtube HomePage clone made using React.In which you can watch videos and shorts and also see the like count, upload time,
 and channel page .All the data coming using Rapid API.
 
-# deploy link 
+# deploy link
+
+https://chipper-narwhal-b7c763.netlify.app/
 
 
 # How to start the project 
