@@ -9,14 +9,11 @@ import style from "./ShortsDetail.module.css";
 
 const iconStyle = {
   backgroundColor: "#efeaea",
-  width: "2rem",
-  height: "2rem",
   padding: "1rem",
-  fontSize: "1rem",
+  fontSize: "2rem",
   borderRadius: "2rem",
   "@media (max-width: 600px)": {
-    width: "1.5rem",
-    height: "1.5rem",
+    fontSize: "1.5rem",
     padding: "0.5rem",
   },
 };

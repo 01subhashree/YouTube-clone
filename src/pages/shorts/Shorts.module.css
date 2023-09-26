@@ -1,0 +1,7 @@
+.Shorts_screen {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 80vh;
+  overflow: hidden;
+}
