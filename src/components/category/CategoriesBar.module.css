@@ -37,14 +37,14 @@
     .CategoriesBar{
         position: fixed;
         right: 0;
-        left: 10rem;
+        left: 9rem;
     }
   }
   @media screen and (max-width: 950px){
     .CategoriesBar{
         position: fixed;
         right: 0;
-        left: 8rem;
+        left: 5.5rem;
     }
   }
   @media screen and (max-width: 650px){
